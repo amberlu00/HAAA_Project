@@ -28,7 +28,7 @@
     self.mainPageVideoController.view.frame = CGRectMake(0, 60, CGRectGetWidth(screenBounds), 230);
     self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth(screenBounds), 50)];
     self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 355, CGRectGetWidth(screenBounds), 70)];
-    self.mainNewTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 440, CGRectGetWidth(screenBounds), CGRectGetHeight(screenBounds))];
+    self.mainNewTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 440, CGRectGetWidth(screenBounds), CGRectGetHeight(screenBounds) - 440)];
     //Setting up the video for the main page
     NSString *mainPageVideoPath = [[NSBundle mainBundle] pathForResource:@"MainPageVideo" ofType:@"mp4"];
     NSURL *mainPageVideoURL = [NSURL fileURLWithPath:mainPageVideoPath];
@@ -65,12 +65,9 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 10;
 }
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
-- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return @[@"Newest interviews: "];
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Our latest interviews: ";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
