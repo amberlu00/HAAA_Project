@@ -22,13 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //Initializing important variables
+    
+    //Initializing the frame
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     self.mainPageVideoController = [[AVPlayerViewController alloc] init];
     self.mainPageVideoController.view.frame = CGRectMake(0, 60, CGRectGetWidth(screenBounds), 230);
     self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, CGRectGetWidth(screenBounds), 50)];
     self.textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 355, CGRectGetWidth(screenBounds), 70)];
     self.mainNewTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 440, CGRectGetWidth(screenBounds), CGRectGetHeight(screenBounds) - 440)];
+    
     //Setting up the video for the main page
     NSString *mainPageVideoPath = [[NSBundle mainBundle] pathForResource:@"MainPageVideo" ofType:@"mp4"];
     NSURL *mainPageVideoURL = [NSURL fileURLWithPath:mainPageVideoPath];

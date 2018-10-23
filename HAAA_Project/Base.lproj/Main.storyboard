@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="MainPageViewController" sceneMemberID="viewController">
@@ -19,46 +19,85 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768.79999999999995" y="-604.04797601199402"/>
+            <point key="canvasLocation" x="734" y="-716"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="7Yl-qE-wMp">
+        <!--Interviews-->
+        <scene sceneID="2bY-vB-Ypb">
             <objects>
-                <collectionViewController id="Ntj-Gf-qYd" customClass="MainInterviewsCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="dyP-31-IkM">
+                <viewController id="MtP-dz-1nd" customClass="MainInterviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dOV-3P-sMN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TWC-zl-rsA">
-                            <size key="itemSize" width="50" height="50"/>
+                        <viewLayoutGuide key="safeArea" id="YJx-OA-jDq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interviews" image="gallery" id="jCN-AV-Ky5"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="I72-dj-MD6" id="s8q-Pw-R7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1Q-gx-lub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="I72-dj-MD6">
+                    <connections>
+                        <outlet property="delegate" destination="MtP-dz-1nd" id="pP0-yJ-m2m"/>
+                        <outlet property="searchContentsController" destination="MtP-dz-1nd" id="VuG-tH-ZnL"/>
+                        <outlet property="searchResultsDataSource" destination="MtP-dz-1nd" id="xBd-BD-Gco"/>
+                        <outlet property="searchResultsDelegate" destination="MtP-dz-1nd" id="WrE-or-LgH"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1413.5999999999999" y="2.2488755622188905"/>
+        </scene>
+        <!--Interview Person Collection View Controller-->
+        <scene sceneID="tti-Dz-vsI">
+            <objects>
+                <collectionViewController id="9oj-cX-HTe" customClass="InterviewPersonCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ub0-K4-UYG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gwl-nm-EsE">
+                            <size key="itemSize" width="115" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="64V-r8-mPE">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterviewPortraitCell" id="AEK-Zb-VcW" customClass="InterviewPersonCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUt-a3-PpN">
+                                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2r-NW-miH">
+                                            <rect key="frame" x="36" y="119" width="45" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="Ntj-Gf-qYd" id="pk6-t0-kwS"/>
-                            <outlet property="delegate" destination="Ntj-Gf-qYd" id="HDQ-By-ggz"/>
+                            <outlet property="dataSource" destination="9oj-cX-HTe" id="gQ1-4p-jYo"/>
+                            <outlet property="delegate" destination="9oj-cX-HTe" id="LdN-ZS-9fC"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="zyD-JD-rjc"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cc9-Cq-AvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pw-4e-bQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="-244"/>
+            <point key="canvasLocation" x="2247.1999999999998" y="3.1484257871064472"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -71,7 +110,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="Ntj-Gf-qYd" kind="relationship" relationship="viewControllers" id="gfk-jq-pKY"/>
+                        <segue destination="MtP-dz-1nd" kind="relationship" relationship="viewControllers" id="f1G-IA-7z9"/>
                         <segue destination="hL1-J1-5wa" kind="relationship" relationship="viewControllers" id="0l2-Ii-GJj"/>
                     </connections>
                 </tabBarController>
@@ -79,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="AbZ-jl-FDA">
             <objects>
                 <tableViewController id="hL1-J1-5wa" customClass="SettingsTableViewController" sceneMemberID="viewController">
@@ -88,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="AbY-OK-fVX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsIndentifier" id="AbY-OK-fVX">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AbY-OK-fVX" id="Nb7-qE-r5A">
@@ -102,14 +141,16 @@
                             <outlet property="delegate" destination="hL1-J1-5wa" id="bdw-Pb-CvK"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="aZs-z7-Kpd"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="services" id="aZs-z7-Kpd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5X-Uw-wyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="450"/>
+            <point key="canvasLocation" x="734" y="448"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="gallery" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="services" width="30" height="30"/>
     </resources>
 </document>

@@ -15,12 +15,26 @@
 		963DD46A217ECA230017A10F /* HAAA_ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD469217ECA230017A10F /* HAAA_ProjectTests.m */; };
 		963DD476217ECA590017A10F /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD475217ECA590017A10F /* SettingsTableViewController.m */; };
 		963DD479217ECA630017A10F /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD478217ECA630017A10F /* MainPageViewController.m */; };
-		963DD47C217ECA710017A10F /* MainInterviewsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD47B217ECA710017A10F /* MainInterviewsCollectionViewController.m */; };
 		963DD47F217ECBC50017A10F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963DD47E217ECBC50017A10F /* MediaPlayer.framework */; };
 		963DD481217ECCE00017A10F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963DD480217ECCE00017A10F /* AVFoundation.framework */; };
 		963DD483217ECCE40017A10F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963DD482217ECCE40017A10F /* AVKit.framework */; };
 		963DD486217ED0A50017A10F /* MainPageVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 963DD485217ED0A50017A10F /* MainPageVideo.mp4 */; };
 		963DD487217ED0A50017A10F /* MainPageVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 963DD485217ED0A50017A10F /* MainPageVideo.mp4 */; };
+		963DD48B217F87290017A10F /* InterviewMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD48A217F87290017A10F /* InterviewMainCollectionViewCell.m */; };
+		963DD48C217F87290017A10F /* InterviewMainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD48A217F87290017A10F /* InterviewMainCollectionViewCell.m */; };
+		963DD491217F88920017A10F /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD478217ECA630017A10F /* MainPageViewController.m */; };
+		963DD496217F89DE0017A10F /* InterviewPersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD495217F89DE0017A10F /* InterviewPersonCollectionViewCell.m */; };
+		963DD497217F89DE0017A10F /* InterviewPersonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD495217F89DE0017A10F /* InterviewPersonCollectionViewCell.m */; };
+		963DD49A217F8A010017A10F /* InterviewPersonCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD499217F8A010017A10F /* InterviewPersonCollectionViewController.m */; };
+		963DD49B217F8A010017A10F /* InterviewPersonCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD499217F8A010017A10F /* InterviewPersonCollectionViewController.m */; };
+		963DD4A2217F990F0017A10F /* MainInterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD4A1217F990F0017A10F /* MainInterviewViewController.m */; };
+		963DD4A3217F990F0017A10F /* MainInterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DD4A1217F990F0017A10F /* MainInterviewViewController.m */; };
+		963DD4AC217FA2720017A10F /* TrajanPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4A9217FA2720017A10F /* TrajanPro-Bold.otf */; };
+		963DD4AD217FA2720017A10F /* TrajanPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4A9217FA2720017A10F /* TrajanPro-Bold.otf */; };
+		963DD4AE217FA2720017A10F /* TrajanPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4AA217FA2720017A10F /* TrajanPro-Regular.ttf */; };
+		963DD4AF217FA2720017A10F /* TrajanPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4AA217FA2720017A10F /* TrajanPro-Regular.ttf */; };
+		963DD4B0217FA2720017A10F /* Trajan Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4AB217FA2720017A10F /* Trajan Pro.ttf */; };
+		963DD4B1217FA2720017A10F /* Trajan Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 963DD4AB217FA2720017A10F /* Trajan Pro.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +63,21 @@
 		963DD475217ECA590017A10F /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		963DD477217ECA630017A10F /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
 		963DD478217ECA630017A10F /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
-		963DD47A217ECA710017A10F /* MainInterviewsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainInterviewsCollectionViewController.h; sourceTree = "<group>"; };
-		963DD47B217ECA710017A10F /* MainInterviewsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainInterviewsCollectionViewController.m; sourceTree = "<group>"; };
 		963DD47E217ECBC50017A10F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		963DD480217ECCE00017A10F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		963DD482217ECCE40017A10F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		963DD485217ED0A50017A10F /* MainPageVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainPageVideo.mp4; sourceTree = "<group>"; };
+		963DD489217F87290017A10F /* InterviewMainCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewMainCollectionViewCell.h; sourceTree = "<group>"; };
+		963DD48A217F87290017A10F /* InterviewMainCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewMainCollectionViewCell.m; sourceTree = "<group>"; };
+		963DD494217F89DE0017A10F /* InterviewPersonCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewPersonCollectionViewCell.h; sourceTree = "<group>"; };
+		963DD495217F89DE0017A10F /* InterviewPersonCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewPersonCollectionViewCell.m; sourceTree = "<group>"; };
+		963DD498217F8A010017A10F /* InterviewPersonCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterviewPersonCollectionViewController.h; sourceTree = "<group>"; };
+		963DD499217F8A010017A10F /* InterviewPersonCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterviewPersonCollectionViewController.m; sourceTree = "<group>"; };
+		963DD4A0217F990F0017A10F /* MainInterviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainInterviewViewController.h; sourceTree = "<group>"; };
+		963DD4A1217F990F0017A10F /* MainInterviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainInterviewViewController.m; sourceTree = "<group>"; };
+		963DD4A9217FA2720017A10F /* TrajanPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrajanPro-Bold.otf"; sourceTree = "<group>"; };
+		963DD4AA217FA2720017A10F /* TrajanPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrajanPro-Regular.ttf"; sourceTree = "<group>"; };
+		963DD4AB217FA2720017A10F /* Trajan Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trajan Pro.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +123,14 @@
 		963DD44C217ECA220017A10F /* HAAA_Project */ = {
 			isa = PBXGroup;
 			children = (
-				963DD485217ED0A50017A10F /* MainPageVideo.mp4 */,
+				963DD492217F88960017A10F /* Settings View Controllers */,
+				963DD48D217F885D0017A10F /* Main View Controllers */,
 				963DD44D217ECA220017A10F /* AppDelegate.h */,
 				963DD44E217ECA220017A10F /* AppDelegate.m */,
 				963DD456217ECA220017A10F /* Main.storyboard */,
-				963DD474217ECA590017A10F /* SettingsTableViewController.h */,
-				963DD475217ECA590017A10F /* SettingsTableViewController.m */,
-				963DD477217ECA630017A10F /* MainPageViewController.h */,
-				963DD478217ECA630017A10F /* MainPageViewController.m */,
-				963DD47A217ECA710017A10F /* MainInterviewsCollectionViewController.h */,
-				963DD47B217ECA710017A10F /* MainInterviewsCollectionViewController.m */,
+				963DD488217F83DA0017A10F /* Interview View Controllers */,
 				963DD459217ECA230017A10F /* Assets.xcassets */,
+				963DD4A8217FA2720017A10F /* Fonts */,
 				963DD45B217ECA230017A10F /* LaunchScreen.storyboard */,
 				963DD45E217ECA230017A10F /* Info.plist */,
 				963DD45F217ECA230017A10F /* main.m */,
@@ -135,6 +155,50 @@
 				963DD47E217ECBC50017A10F /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		963DD488217F83DA0017A10F /* Interview View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				963DD489217F87290017A10F /* InterviewMainCollectionViewCell.h */,
+				963DD48A217F87290017A10F /* InterviewMainCollectionViewCell.m */,
+				963DD494217F89DE0017A10F /* InterviewPersonCollectionViewCell.h */,
+				963DD495217F89DE0017A10F /* InterviewPersonCollectionViewCell.m */,
+				963DD498217F8A010017A10F /* InterviewPersonCollectionViewController.h */,
+				963DD499217F8A010017A10F /* InterviewPersonCollectionViewController.m */,
+				963DD4A0217F990F0017A10F /* MainInterviewViewController.h */,
+				963DD4A1217F990F0017A10F /* MainInterviewViewController.m */,
+			);
+			path = "Interview View Controllers";
+			sourceTree = "<group>";
+		};
+		963DD48D217F885D0017A10F /* Main View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				963DD477217ECA630017A10F /* MainPageViewController.h */,
+				963DD478217ECA630017A10F /* MainPageViewController.m */,
+				963DD485217ED0A50017A10F /* MainPageVideo.mp4 */,
+			);
+			path = "Main View Controllers";
+			sourceTree = "<group>";
+		};
+		963DD492217F88960017A10F /* Settings View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				963DD474217ECA590017A10F /* SettingsTableViewController.h */,
+				963DD475217ECA590017A10F /* SettingsTableViewController.m */,
+			);
+			path = "Settings View Controllers";
+			sourceTree = "<group>";
+		};
+		963DD4A8217FA2720017A10F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				963DD4A9217FA2720017A10F /* TrajanPro-Bold.otf */,
+				963DD4AA217FA2720017A10F /* TrajanPro-Regular.ttf */,
+				963DD4AB217FA2720017A10F /* Trajan Pro.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,8 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963DD4B0217FA2720017A10F /* Trajan Pro.ttf in Resources */,
 				963DD45D217ECA230017A10F /* LaunchScreen.storyboard in Resources */,
+				963DD4AE217FA2720017A10F /* TrajanPro-Regular.ttf in Resources */,
 				963DD45A217ECA230017A10F /* Assets.xcassets in Resources */,
+				963DD4AC217FA2720017A10F /* TrajanPro-Bold.otf in Resources */,
 				963DD486217ED0A50017A10F /* MainPageVideo.mp4 in Resources */,
 				963DD458217ECA220017A10F /* Main.storyboard in Resources */,
 			);
@@ -228,7 +295,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963DD4AD217FA2720017A10F /* TrajanPro-Bold.otf in Resources */,
+				963DD4AF217FA2720017A10F /* TrajanPro-Regular.ttf in Resources */,
 				963DD487217ED0A50017A10F /* MainPageVideo.mp4 in Resources */,
+				963DD4B1217FA2720017A10F /* Trajan Pro.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,11 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963DD47C217ECA710017A10F /* MainInterviewsCollectionViewController.m in Sources */,
 				963DD479217ECA630017A10F /* MainPageViewController.m in Sources */,
 				963DD476217ECA590017A10F /* SettingsTableViewController.m in Sources */,
+				963DD49A217F8A010017A10F /* InterviewPersonCollectionViewController.m in Sources */,
 				963DD44F217ECA220017A10F /* AppDelegate.m in Sources */,
 				963DD460217ECA230017A10F /* main.m in Sources */,
+				963DD4A2217F990F0017A10F /* MainInterviewViewController.m in Sources */,
+				963DD496217F89DE0017A10F /* InterviewPersonCollectionViewCell.m in Sources */,
+				963DD48B217F87290017A10F /* InterviewMainCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				963DD46A217ECA230017A10F /* HAAA_ProjectTests.m in Sources */,
+				963DD48C217F87290017A10F /* InterviewMainCollectionViewCell.m in Sources */,
+				963DD4A3217F990F0017A10F /* MainInterviewViewController.m in Sources */,
+				963DD497217F89DE0017A10F /* InterviewPersonCollectionViewCell.m in Sources */,
+				963DD49B217F8A010017A10F /* InterviewPersonCollectionViewController.m in Sources */,
+				963DD491217F88920017A10F /* MainPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
