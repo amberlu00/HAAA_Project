@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  MainPageViewController.h
 //  HAAA_Project
 //
 //  Created by Amber Lu on 10/22/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface MainPageViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

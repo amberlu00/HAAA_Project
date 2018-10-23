@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SettingsTableViewController.h
 //  HAAA_Project
 //
 //  Created by Amber Lu on 10/22/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SettingsTableViewController : UITableViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
