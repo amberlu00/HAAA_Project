@@ -13,6 +13,7 @@
 @property UICollectionViewFlowLayout *mainInterviewFlowLayout;
 @property (strong, nonatomic) UICollectionView *mainInterviewCollectionView;
 @property (strong, nonatomic) NSArray *sortByArray;
+@property InterviewPersonCollectionViewController *refinedSearchController;
 
 
 @end
@@ -58,9 +59,9 @@
     UILabel *titleofCellLabel = [[UILabel alloc] initWithFrame:CGRectMake(cell.bounds.origin.x + 5, cell.bounds.origin.y + 5, cell.bounds.size.width - 5, cell.bounds.size.height - 5)];
     titleofCellLabel.text = [self.sortByArray objectAtIndex:indexPath.row];
     titleofCellLabel.textColor = [UIColor whiteColor];
-    titleofCellLabel.font = [UIFont fontWithName:@"Trajan Pro" size:15];
     titleofCellLabel.textAlignment = NSTextAlignmentCenter;
     titleofCellLabel.numberOfLines = 0;
+    titleofCellLabel.font = [UIFont fontWithName:@"Trajan Pro" size:15];
     [cell.contentView addSubview:titleofCellLabel];
     [cell setBackgroundColor:[UIColor colorWithRed:0.0 green:36.0/255.0 blue:106.0/255.0 alpha:1]];
     
@@ -70,5 +71,9 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     return CGSizeMake(screenBounds.size.width/2 - 20, screenBounds.size.width/2 - 20);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
 }
 @end

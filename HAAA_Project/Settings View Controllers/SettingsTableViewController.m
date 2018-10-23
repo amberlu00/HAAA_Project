@@ -43,12 +43,23 @@
     }
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch(section) {
+        case 0:
+            return @"Settings";
+        case 1:
+            return @"About us";
+        case 2:
+            return @"App information";
+        default:
+            return @"Failure to get data";
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SettingsIndentifer" forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SettingsIdentifier" forIndexPath:indexPath];
+    cell.textLabel.text = @"Temporary";
     // Configure the cell...
-    
     return cell;
 }
 

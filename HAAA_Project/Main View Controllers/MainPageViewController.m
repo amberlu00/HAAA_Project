@@ -22,6 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Optional code to test for the correct fonts :)
+    /*
+    for (NSString *familyName in [UIFont familyNames]){
+        NSLog(@"Family name: %@", familyName);
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+            NSLog(@"--Font name: %@", fontName);
+        }
+    }
+    */
     
     //Initializing the frame
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
@@ -63,16 +72,27 @@
     self.mainNewTableView.clipsToBounds = YES;
 }
 
+
 #pragma mark - Table Functions
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 3;
+    }
+    return 5;
+}
+
+- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"You recently viewed: ";
+    }
     return @"Our latest interviews: ";
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *newCellIdentifier = @"mainNewPageCell";
     UITableViewCell *individualCell = [self.mainNewTableView dequeueReusableCellWithIdentifier:newCellIdentifier];
     individualCell.textLabel.text = @"Temporary";
