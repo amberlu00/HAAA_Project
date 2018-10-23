@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVKit/AVKit.h>
+#import <UIKit/UIKIt.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainPageViewController : UIViewController
+
+//- (IBAction) actionPlayVideo:(id)sender;
 
 @end
 
