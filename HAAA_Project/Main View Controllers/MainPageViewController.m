@@ -56,9 +56,13 @@
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:20];
     self.titleLabel.numberOfLines = 0;
+    //self.titleLabel.textColor = [UIColor whiteColor];
+    //self.titleLabel.backgroundColor = [UIColor colorWithRed:0.0 green:36.0/255.0 blue:106.0/255.0 alpha:1];
     self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.textLabel.text = mainPageText;
     self.textLabel.font = [UIFont systemFontOfSize:14];
+    //self.textLabel.textColor = [UIColor whiteColor];
+    //self.textLabel.backgroundColor = [UIColor colorWithRed:0.0 green:36.0/255.0 blue:106.0/255.0 alpha:1];
     self.textLabel.numberOfLines = 0;
     self.textLabel.textAlignment = NSTextAlignmentCenter;
     self.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -70,6 +74,12 @@
     self.mainNewTableView.delegate = self;
     [self.view addSubview:self.mainNewTableView];
     self.mainNewTableView.clipsToBounds = YES;
+    
+    //Setting up the header bar text
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Trajan Pro" size:20], NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName, nil];
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0 green:36.0/255.0 blue:106.0/255.0 alpha:1]];
+
 }
 
 
